@@ -2,7 +2,7 @@ def nyc_pigeon_organizer(data)
   name = pigeon_name (data) 
   color = pigeon_color(name,data)
   gender = pigeon_gender(name,data)
-  pp color
+  pp gender
 end
 
 def pigeon_name(data)
@@ -23,7 +23,7 @@ def pigeon_color (name,new_data)
     data.each do |col,arr|
       arr.each do |pg_name|
         if pg_name == ele
-          new_arr << col
+          new_arr << col.to_s
         end  
       end
     end
@@ -35,14 +35,13 @@ end
 def pigeon_gender(name,new_data)
   new_hash = {}
   data = new_data[:gender]
-  name.each do |ele|
-    new_arr = []
+  name.each do |ele1|
     data.each do |key,arr|
-      arr.each do |ele|
-        
+      arr.each do |ele2|
+        if ele1 == ele2
+          new_hash["gender"] = key
       end
     end
-    new_hash[ele] = new_arr
   end
   new_hash
 end
