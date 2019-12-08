@@ -59,6 +59,7 @@ def pigeon_location(name,new_data)
           new_hash[ele1] = key
       end
     end
+    end
   end
  new_hash
 end
