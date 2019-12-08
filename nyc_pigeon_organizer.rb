@@ -1,6 +1,7 @@
 def nyc_pigeon_organizer(data)
   name = pigeon_name (data) 
   color = pigeon_color(name,data)
+  gender = pigeon_gender(name,data)
   pp color
 end
 
@@ -17,6 +18,23 @@ end
 def pigeon_color (name,new_data)
   new_hash = {}
   data = new_data[:color]
+  name.each do |ele|
+    new_arr = []
+    data.each do |col,arr|
+      arr.each do |pg_name|
+        if pg_name == ele
+          new_arr << col
+        end  
+      end
+    end
+    new_hash[ele] = new_arr
+  end
+  new_hash
+end
+
+def pigeon_gender(name,new_data)
+  new_hash = {}
+  data = new_data[]
   name.each do |ele|
     new_arr = []
     data.each do |col,arr|
