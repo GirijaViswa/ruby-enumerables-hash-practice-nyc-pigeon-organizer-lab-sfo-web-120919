@@ -42,13 +42,15 @@ def pigeon_gender(name,new_data)
   new_hash = {}
   data = new_data[:gender]
   name.each do |ele1|
+    new_arr = []
     data.each do |key,arr|
       arr.each do |ele2|
         if ele1 == ele2
-          new_hash[ele1] = key.to_s
+          new_arr << key.to_s
       end
     end
   end
+  new_hash[ele1] = new_arr
 end
   new_hash
 end
@@ -57,13 +59,15 @@ def pigeon_location(name,new_data)
   new_hash = {}
   data = new_data[:lives]
   name.each do |ele1|
+    new_arr = []
     data.each do |key,arr|
       arr.each do |ele2|
         if ele1 == ele2
-          new_hash[ele1] = key
+          new_arr <<  key
       end
     end
     end
+    new_hash[ele1] = new_arr
   end
  new_hash
 end
