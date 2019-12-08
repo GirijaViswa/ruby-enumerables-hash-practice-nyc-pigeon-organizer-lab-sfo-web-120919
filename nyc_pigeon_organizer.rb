@@ -58,5 +58,5 @@ def pigeon_location(name,new_data)
       end
     end
   end
-  new_hash
+ pp new_hash
 end
