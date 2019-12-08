@@ -1,5 +1,6 @@
 def nyc_pigeon_organizer(data)
   name = pigeon_name (data) 
+  pp name
 end
 
 def pigeon_name(data)
