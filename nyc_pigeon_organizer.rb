@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
   name.each do |element|
     my_hash[element] = {":color" => color[element],":gender" => gender[element], ":lives" => location[element]}
   end
-  my_hash
+  pp my_hash
 end
 
 def pigeon_name(data)
