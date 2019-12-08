@@ -47,7 +47,7 @@ end
   new_hash
 end
 
-def pigeon_gender(name,new_data)
+def pigeon_status(name,new_data)
   new_hash = {}
   data = new_data[:gender]
   name.each do |ele1|
