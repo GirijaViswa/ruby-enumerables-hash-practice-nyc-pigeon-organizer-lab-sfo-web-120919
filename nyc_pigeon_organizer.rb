@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   color = pigeon_color(name,data)
   gender = pigeon_gender(name,data)
   location = pigeon_location(name,data)
-  pp location
+  
 end
 
 def pigeon_name(data)
@@ -51,7 +51,6 @@ end
 def pigeon_location(name,new_data)
   new_hash = {}
   data = new_data[:lives]
-  pp data
   name.each do |ele1|
     data.each do |key,arr|
       arr.each do |ele2|
