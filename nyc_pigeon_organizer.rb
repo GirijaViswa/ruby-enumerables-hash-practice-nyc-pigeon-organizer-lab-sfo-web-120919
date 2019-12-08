@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   color = pigeon_color(name,data)
   gender = pigeon_gender(name,data)
   location = pigeon_location(name,data)
-  col_name = 'color'
+  col_name = 'color'.to_sym
   # hash[:color]
   # hash['color']
   name.each do |element|
