@@ -38,11 +38,7 @@ def pigeon_gender(name,new_data)
   name.each do |ele|
     new_arr = []
     data.each do |col,arr|
-      arr.each do |pg_name|
-        if pg_name == ele
-          new_arr << col
-        end  
-      end
+      
     end
     new_hash[ele] = new_arr
   end
