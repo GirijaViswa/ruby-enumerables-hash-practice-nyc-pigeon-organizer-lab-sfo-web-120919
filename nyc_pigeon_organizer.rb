@@ -48,9 +48,9 @@ end
   new_hash
 end
 
-def pigeon_status(name,new_data)
+def pigeon_location(name,new_data)
   new_hash = {}
-  data = new_data[:gender]
+  data = new_data[:lives]
   name.each do |ele1|
     data.each do |key,arr|
       arr.each do |ele2|
