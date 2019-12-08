@@ -1,7 +1,6 @@
 def nyc_pigeon_organizer(data)
   name = pigeon_name (data) 
-  colors = data[:color]
-  color = pigeon_color (name,colors)
+  color = pigeon_color (name,data)
   pp color
 end
 
@@ -15,9 +14,9 @@ end
 new_arr = new_arr.uniq
 end
 
-def pigeon_color (name,data)
+def pigeon_color (name,new_data)
   new_hash = {}
-  
+  data = new_data[:color]
   name.each do |ele|
     new_arr = []
     data.each do |col,arr|
