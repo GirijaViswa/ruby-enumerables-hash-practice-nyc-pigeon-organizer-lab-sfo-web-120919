@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
   location = pigeon_location(name,data)
   col_name = ':color'
   name.each do |element|
-    my_hash[element] = { col_name=> color[element],':gender' => gender[element], data[2] => location[element]}
+    my_hash[element] = { col_name=> color[element],':gender' => gender[element], ':lives' => location[element]}
   end
   pp my_hash
 end
