@@ -1,3 +1,8 @@
 def nyc_pigeon_organizer(data)
-  p data 
+  name = pigeon_name (data) 
+end
+
+def pigeon_name(data)
+new_arr = []
+
 end
