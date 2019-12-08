@@ -53,7 +53,7 @@ def pigeon_location(name,new_data)
   data = new_data[:lives]
   name.each do |ele1|
     data.each do |key,val|
-        if ele1 == ele2
+        if ele1 == val
           new_hash[ele1] = key
       end
     end
