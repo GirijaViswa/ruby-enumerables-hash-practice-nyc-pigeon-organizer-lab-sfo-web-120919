@@ -39,7 +39,7 @@ def pigeon_gender(name,new_data)
     data.each do |key,arr|
       arr.each do |ele2|
         if ele1 == ele2
-          new_hash["gender"] = key
+          new_hash[ele1] = key
       end
     end
   end
