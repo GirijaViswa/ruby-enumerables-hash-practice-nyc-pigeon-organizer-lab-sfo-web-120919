@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   name = pigeon_name (data) 
   colors = data[:color]
-  color = pigeon_color (name,data[:color])
+  color = pigeon_color (name,colors)
   pp color
 end
 
