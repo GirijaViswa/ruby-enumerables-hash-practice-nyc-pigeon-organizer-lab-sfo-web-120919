@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   name = pigeon_name (data) 
-  color = pigeon_color (name,data)
+  color = pigeon_color(name,data)
   pp color
 end
 
