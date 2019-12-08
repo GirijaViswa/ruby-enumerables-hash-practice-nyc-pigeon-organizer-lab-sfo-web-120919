@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
   # hash[:color]
   # hash['color']
   name.each do |element|
-    my_hash[element] = { col_name=> color[element],':gender' => gender[element], ':lives' => location[element]}
+    my_hash[element] = { col_name=> color[element],'gender' => gender[element], 'lives' => location[element]}
   end
   pp my_hash
 end
