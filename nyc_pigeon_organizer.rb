@@ -46,3 +46,18 @@ def pigeon_gender(name,new_data)
 end
   new_hash
 end
+
+def pigeon_gender(name,new_data)
+  new_hash = {}
+  data = new_data[:gender]
+  name.each do |ele1|
+    data.each do |key,arr|
+      arr.each do |ele2|
+        if ele1 == ele2
+          new_hash[ele1] = key
+      end
+    end
+  end
+end
+  new_hash
+end
