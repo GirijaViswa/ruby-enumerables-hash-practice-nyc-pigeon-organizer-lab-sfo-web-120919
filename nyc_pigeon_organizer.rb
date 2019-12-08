@@ -2,7 +2,8 @@ def nyc_pigeon_organizer(data)
   name = pigeon_name (data) 
   color = pigeon_color(name,data)
   gender = pigeon_gender(name,data)
-  pp gender
+  location = pigeon_location(name,data)
+  pp location
 end
 
 def pigeon_name(data)
